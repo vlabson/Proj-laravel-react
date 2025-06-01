@@ -1,6 +1,7 @@
 import React from "react";
 import { Head, Link } from "@inertiajs/react";
 import Footer from "@/Components/Footer";
+import ApplicationLogo from "@/Components/ApplicationLogo";
 
 export default function Welcome({ auth }) {
     const currentYear = new Date().getFullYear();
@@ -15,6 +16,12 @@ export default function Welcome({ auth }) {
 
                 {/*conteúdo principal */}
                 <main className="flex-grow flex flex-col justify-center items-center px-4">
+
+                    <div >
+                        <Link href="/">
+                            <ApplicationLogo className="h-auto w-80 my-10 fill-current text-gray-500" />
+                        </Link>
+                    </div>
 
                     {/* Cabeçalho */}
                     <header className="text-center">
